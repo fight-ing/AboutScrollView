@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LFViewController : UIViewController
-
+#import "LFDrawView.h"
+@interface LFViewController : UIViewController <UIScrollViewDelegate>
+{
+    UIScrollView *mScrollView;
+    LFDrawView *imageView;
+}
 @end
